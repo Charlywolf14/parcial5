@@ -1,0 +1,902 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+DIRE 181749-22022
+</title>
+
+
+<style>
+.mainmenubtn {
+    background-color: #F0D80A;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+	 border-radius: 15px;
+}
+.mainmenubtn:hover {
+    background-color: red;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: #F0D80A;
+    min-width: 230px;
+	 border-radius: 15px;
+	  #primero:hover .primero { display:none; }
+}
+.dropdown-child a {
+    color: black;
+    <!-- padding: 20px; -->
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+ #div2{
+     <!-- background-color: red; -->
+     width: 70%;
+     float: left;
+     position: relative;   
+	border-radius: 15px;	 
+ }
+ #div3{
+    <!-- background-color: #00CED1;-->
+     width: 70%;
+     float: right;
+     position: relative;
+	 border-radius: 15px;
+ }
+
+#divprincipal{
+   border:3px solid;
+   border-radius:22px;
+
+
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<DIV align='center'>
+ <h1>UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA </h1>
+</DIV>
+<DIV align='left'>
+<h2>Seminario de Tecnología e Información</h2> 
+<h2>Parcial No. V</h2> 
+</DIV>
+<div id="div2" >
+<div class="dropdown">
+  <button class="mainmenubtn">Gestores de Base de Datos</button>
+<ul class="dropdown-child">
+	<li><a><button type='submit' id='validate' onclick = "mostrardiv1();" style='width:140px; height:25px'>MYSql</button></a></li> 
+	<li><a><button type='submit' id='validate2' onclick = "mostrardiv2();" style='width:140px; height:25px'>PostgreSQL</button></a></li> 
+	<li><a><button type='submit' id='validate3' onclick = "mostrardiv3();" style='width:140px; height:25px'>FireBird</button></a></li> 
+ </ul> 
+</div>
+</div>
+
+<div id="div3">
+<div id="obj1" class="primero" style="display: none">
+ <!-- DivDire1 -->
+	<div id="divPrincipalPrimerDire">
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA 1</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid ">
+<div class="x_panel">
+<div id="divprincipal" class="x_content">
+<div   class="row">
+
+<div class="col-md-12 col-sm-12  form-group">
+
+</div>
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">ASIGNACIÓN DE CURSOS</label>
+</div>
+<div class="col-md-6 col-sm-12  form-group text-right">
+<label class="col-form-label col-md-3 col-sm-3 ">Semestre/Trimestre: 22022</label>
+</div>
+
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carnet:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">5190-18-1749</label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carrera:</label>
+
+</div>
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">INGENIERÍA EN SISTEMAS DE INFORMACIÓN Y CIENCIAS DE LA COMPU</label>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">CARLOS RODOLFO </label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Jornada:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">Sábado Matutino</label>
+<label class="col-form-label col-md-2 col-sm-12 ">Ciclo:</label>
+<label class="col-form-label col-md-1 col-sm-12 ">10</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-2 col-sm-12 ">Mensual</label>
+<label class="col-form-label col-md-4 col-sm-12 ">Q. 650.00</label>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-12 ">Apellidos:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">BENDFELDT SAMAYOA</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-6 col-sm-3 ">Dire.Casa:</label>
+</div>
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">ZONA 12, COLONIA EL CARMEN, 2AV A 32-00, GUATEMALA</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Tel.:</label>
+<label class="col-form-label col-md-2 col-sm-12 ">35471388</label>
+</div>
+
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-12 ">Fecha Asig:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">17/07/2022 14:33:56</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------D E T A L L E------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Fac.</label>
+<label class="col-form-label col-md-1 col-sm-3 ">Cod.</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre del curso</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Horario</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Aula</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Sección</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------------------------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">038</label>
+<label class="col-form-label col-md-6 col-sm-12 ">REDES DE COMPUTADORAS I</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0700 - 0900</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-309</label>
+<label class="col-form-label col-md-3 col-sm-3 ">D - OK</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">047</label>
+<label class="col-form-label col-md-6 col-sm-12 ">SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 1100 - 1300</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-302</label>
+<label class="col-form-label col-md-3 col-sm-3 ">A - OK</label>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">048</label>
+<label class="col-form-label col-md-6 col-sm-12 ">ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0900 - 1100</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-304</label>
+<label class="col-form-label col-md-3 col-sm-3 ">C - OK</label>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">5190 Usuario: cbendfeldts Contraseña 567004EST$ (si no la ha cambiado) Correo Electrónico: ediazp1@miumg.edu.gt
+INSTRUCCIONES 1). Lea detenidamente este documento y proceda a firmarlo en el lugar que corresponde. 2). Guarde el original, pues es su constancia OFICIAL DE INSCRIPCIÓN
+y preséntelo para cualquier trámite. 3). USTED es el único responsable de los cursos que se asigna. 4). Si USTED, recibe sus cursos en otra sección que no sea la descrita
+en este documento, no se le podrán ingresar sus notas. 5). Aplica MULTA de Q. 25.00 por cada Evaluación a la que se someta estando insolvente.
+EL COSTO DE REPOSICIÓN DE ESTE DOCUMENTO ES DE Q. 10.00 EN TESORERÍA</label>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-6 col-sm-12  form-group">
+	<label class="col-form-label col-md-3 col-sm-3 ">Fecha Impresión:</label>
+		<label class="col-form-label col-md-3 col-sm-3 ">17/07/2022</label>
+	</div>
+	<div class="col-md-6 col-sm-12 ">
+	<label class="col-form-label col-md-3 col-sm-3 ">Firma Alumno:</label>
+	<label class="col-form-label col-md-3 col-sm-3 ">_____________________________________________</label>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>CONOCERÉIS LA VERDAD Y LA VERDAD OS HARÁ LIBRES</h3>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div> 
+</div>
+
+<div id="div3">
+<div id="obj2" style="display: none">
+
+ <!-- DivDire2 -->
+	<div id="divPrincipalSegundoDire">
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA 2</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid ">
+<div class="x_panel">
+<div id="divprincipal" class="x_content">
+<div   class="row">
+
+<div class="col-md-12 col-sm-12  form-group">
+
+</div>
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">ASIGNACIÓN DE CURSOS</label>
+</div>
+<div class="col-md-6 col-sm-12  form-group text-right">
+<label class="col-form-label col-md-3 col-sm-3 ">Semestre/Trimestre: 22022</label>
+</div>
+
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carnet:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">5190-18-1749</label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carrera:</label>
+
+</div>
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">INGENIERÍA EN SISTEMAS DE INFORMACIÓN Y CIENCIAS DE LA COMPU</label>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">CARLOS RODOLFO</label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Jornada:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">Sábado Matutino</label>
+<label class="col-form-label col-md-2 col-sm-12 ">Ciclo:</label>
+<label class="col-form-label col-md-1 col-sm-12 ">10</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-2 col-sm-12 ">Mensual</label>
+<label class="col-form-label col-md-4 col-sm-12 ">Q. 650.00</label>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-12 ">Apellidos:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">BENDFELDT SAMAYOA</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-6 col-sm-3 ">Dire.Casa:</label>
+</div>
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">ZONA 12, COLONIA EL CARMEN, 2AV A 32-00, GUATEMALA</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Tel.:</label>
+<label class="col-form-label col-md-2 col-sm-12 ">35471388</label>
+</div>
+
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-12 ">Fecha Asig:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">17/07/2022 14:33:56</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------D E T A L L E------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Fac.</label>
+<label class="col-form-label col-md-1 col-sm-3 ">Cod.</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre del curso</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Horario</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Aula</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Sección</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------------------------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">038</label>
+<label class="col-form-label col-md-6 col-sm-12 ">REDES DE COMPUTADORAS I</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0700 - 0900</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-309</label>
+<label class="col-form-label col-md-3 col-sm-3 ">A - OK</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">049</label>
+<label class="col-form-label col-md-6 col-sm-12 ">SEMINARIO DE TECNOLOGÍAS DE LA INFORMACIÓN</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 1100 - 1300</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-302</label>
+<label class="col-form-label col-md-3 col-sm-3 ">A - OK</label>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">048</label>
+<label class="col-form-label col-md-6 col-sm-12 ">ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0900 - 1100</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-304</label>
+<label class="col-form-label col-md-3 col-sm-3 ">C - OK</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">5190 Usuario: cbendfeldts Contraseña 567004EST$ (si no la ha cambiado) Correo Electrónico: ediazp1@miumg.edu.gt
+INSTRUCCIONES 1). Lea detenidamente este documento y proceda a firmarlo en el lugar que corresponde. 2). Guarde el original, pues es su constancia OFICIAL DE INSCRIPCIÓN
+y preséntelo para cualquier trámite. 3). USTED es el único responsable de los cursos que se asigna. 4). Si USTED, recibe sus cursos en otra sección que no sea la descrita
+en este documento, no se le podrán ingresar sus notas. 5). Aplica MULTA de Q. 25.00 por cada Evaluación a la que se someta estando insolvente.
+EL COSTO DE REPOSICIÓN DE ESTE DOCUMENTO ES DE Q. 10.00 EN TESORERÍA</label>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-6 col-sm-12  form-group">
+	<label class="col-form-label col-md-3 col-sm-3 ">Fecha Impresión:</label>
+		<label class="col-form-label col-md-3 col-sm-3 ">17/07/2022</label>
+	</div>
+	<div class="col-md-6 col-sm-12 ">
+	<label class="col-form-label col-md-3 col-sm-3 ">Firma Alumno:</label>
+	<label class="col-form-label col-md-3 col-sm-3 ">_____________________________________________</label>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>CONOCERÉIS LA VERDAD Y LA VERDAD OS HARÁ LIBRES</h3>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div id="div3">
+<div id="obj3" style="display: none">
+  
+   <!-- DivDire3 -->
+	<div id="divPrincipalTercerDire">
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA 3</h3>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid ">
+<div class="x_panel">
+<div id="divprincipal" class="x_content">
+<div   class="row">
+
+<div class="col-md-12 col-sm-12  form-group">
+
+</div>
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">ASIGNACIÓN DE CURSOS</label>
+</div>
+<div class="col-md-6 col-sm-12  form-group text-right">
+<label class="col-form-label col-md-3 col-sm-3 ">Semestre/Trimestre: 22022</label>
+</div>
+
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carnet:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">5190-18-1749</label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Carrera:</label>
+
+</div>
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">INGENIERÍA EN SISTEMAS DE INFORMACIÓN Y CIENCIAS DE LA COMPU</label>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">CARLOS RODOLFO</label>
+</div>
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Jornada:</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-6 col-sm-12 ">Sábado Matutino</label>
+<label class="col-form-label col-md-2 col-sm-12 ">Ciclo:</label>
+<label class="col-form-label col-md-1 col-sm-12 ">10</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-2 col-sm-12 ">Mensual</label>
+<label class="col-form-label col-md-4 col-sm-12 ">Q. 650.00</label>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-12 ">Apellidos:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">BENDFELDT SAMAYOA</label>
+</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-1 col-sm-1  form-group">
+<label class="col-form-label col-md-6 col-sm-3 ">Dire.Casa:</label>
+</div>
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">ZONA 12, COLONIA EL CARMEN, 2AV A 32-00, GUATEMALA</label>
+</div>
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Tel.:</label>
+<label class="col-form-label col-md-2 col-sm-12 ">56001566</label>
+</div>
+
+<div class="col-md-4 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-12 ">Fecha Asig:</label>
+<label class="col-form-label col-md-4 col-sm-12 ">17/07/2022 14:33:40</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------D E T A L L E------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">Fac.</label>
+<label class="col-form-label col-md-1 col-sm-3 ">Cod.</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Nombre del curso</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Horario</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">Aula</label>
+<label class="col-form-label col-md-3 col-sm-3 ">Sección</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<p>--------------------------------------------------------------------------------------------------</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">038</label>
+<label class="col-form-label col-md-6 col-sm-12 ">REDES DE COMPUTADORAS I</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0700 - 0900</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-309</label>
+<label class="col-form-label col-md-3 col-sm-3 ">A - OK</label>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">047</label>
+<label class="col-form-label col-md-6 col-sm-12 ">SEMINARIO DE TECNOLOGÍAS DE INFORMACIÓN</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 1100 - 1300</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-302</label>
+<label class="col-form-label col-md-3 col-sm-3 ">A - OK</label>
+</div>
+
+</div>
+</div
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-6 col-sm-12  form-group">
+<label class="col-form-label col-md-1 col-sm-3 ">5190</label>
+<label class="col-form-label col-md-1 col-sm-3 ">049</label>
+<label class="col-form-label col-md-6 col-sm-12 ">ASEGURAMIENTO DE LA CALIDAD DE SOFTWARE</label>
+</div>
+
+<div class="col-md-3 col-sm-12">
+<label class="col-form-label col-md-6 col-sm-3 ">Sa 0900 - 1100</label>
+</div>
+
+<div class="col-md-3 col-sm-12  form-group">
+<label class="col-form-label col-md-3 col-sm-3 ">C-304</label>
+<label class="col-form-label col-md-3 col-sm-3 ">C - OK</label>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<label class="col-form-label col-md-12 col-sm-12 ">5190 Usuario: cbendfeldts Contraseña 567004EST$ (si no la ha cambiado) Correo Electrónico: ediazp1@miumg.edu.gt
+INSTRUCCIONES 1). Lea detenidamente este documento y proceda a firmarlo en el lugar que corresponde. 2). Guarde el original, pues es su constancia OFICIAL DE INSCRIPCIÓN
+y preséntelo para cualquier trámite. 3). USTED es el único responsable de los cursos que se asigna. 4). Si USTED, recibe sus cursos en otra sección que no sea la descrita
+en este documento, no se le podrán ingresar sus notas. 5). Aplica MULTA de Q. 25.00 por cada Evaluación a la que se someta estando insolvente.
+EL COSTO DE REPOSICIÓN DE ESTE DOCUMENTO ES DE Q. 10.00 EN TESORERÍA</label>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-6 col-sm-12  form-group">
+	<label class="col-form-label col-md-3 col-sm-3 ">Fecha Impresión:</label>
+		<label class="col-form-label col-md-3 col-sm-3 ">17/07/2022</label>
+	</div>
+	<div class="col-md-6 col-sm-12 ">
+	<label class="col-form-label col-md-3 col-sm-3 ">Firma Alumno:</label>
+	<label class="col-form-label col-md-3 col-sm-3 ">_____________________________________________</label>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<br/>
+<br/>
+<br/>
+<div class="row">
+<div class="col-md-12 col-sm-12  form-group">
+<div class="col-auto text-center">
+<h3>CONOCERÉIS LA VERDAD Y LA VERDAD OS HARÁ LIBRES</h3>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+  
+  
+</div>
+</div>
+
+<script>
+
+function mostrardiv1(){
+document.getElementById('obj1').style.display = 'block';
+document.getElementById('obj2').style.display = 'none';
+document.getElementById('obj3').style.display = 'none';
+};
+
+function mostrardiv2(){
+document.getElementById('obj2').style.display = 'block';
+document.getElementById('obj1').style.display = 'none';
+document.getElementById('obj3').style.display = 'none';
+};
+
+function mostrardiv3(){
+document.getElementById('obj3').style.display = 'block';
+document.getElementById('obj1').style.display = 'none';
+document.getElementById('obj2').style.display = 'none';
+};
+
+</script>
+</body>
+</html>
